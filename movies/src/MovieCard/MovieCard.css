@@ -1,0 +1,16 @@
+.movie-card{
+  display: flex;
+  margin: 5px;
+  width: 250px;
+}
+
+.movie-detail{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+  flex-grow: 1;
+}
+
+p{
+  margin: 0;
+}

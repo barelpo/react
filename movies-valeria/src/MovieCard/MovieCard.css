@@ -1,0 +1,17 @@
+.movie-card {
+    display: flex;
+    align-items: start;
+    margin: 5px 0;
+    width: 20em;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    flex-grow: 1;
+}
+
+.like-btn {
+    margin: 5px;
+}

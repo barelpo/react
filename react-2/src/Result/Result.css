@@ -1,0 +1,23 @@
+.navigate{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.button-div{
+  width: 40px;
+  display: flex;
+
+}
+
+button{
+  object-fit: contain;
+  display: flex;
+  
+}
+
+img{
+  object-fit: contain;
+}
