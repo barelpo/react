@@ -1,6 +1,6 @@
 import { Button, Chip, Input, Stack } from "@mui/material";
 
-const AlphabetBox = () => {
+const AlphabetBox = ({onLetterSelected, loading}) => {
 
   const AlphabetRow = () => {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -15,6 +15,8 @@ const AlphabetBox = () => {
             clickable
             color="primary"
             label={letter}
+            onClick = {() => onLetterSelected(letter)}
+            disabled={loading}
             />
         ))}
       </Stack>

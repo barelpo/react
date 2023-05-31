@@ -1,7 +1,9 @@
 import { Button, Input, Stack } from "@mui/material";
+import { useState } from "react";
+import CircularProgress from '@mui/material/CircularProgress';
 
 
-const SearchBox = () => {
+const SearchBox = ({handleClick, name, setName, loading}) => {
 
   return(
 
@@ -15,12 +17,24 @@ const SearchBox = () => {
         <Input
           color="primary"
           placeholder="Insert cocktail name"
-          size="md">
+          size="md"
+          onChange={(event) => setName(event.target.value)}>
         </Input>
 
-        <Button variant="outlined">
+        {loading
+          
+          ?
+        
+          <CircularProgress />
+
+          :
+
+          <Button variant="outlined" onClick={()=>handleClick()}>
           Search
-        </Button>
+          </Button>
+        }
+        
+        
       </Stack>
 
     </Stack>
